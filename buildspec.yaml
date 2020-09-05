@@ -15,6 +15,8 @@ phases:
       - npm install
       - npm audit fix
       - npm link @angular/cli
+      - npm i @angular/compiler-cli
+      - npm install
   build:
     commands:
       - echo Build started on `date`
