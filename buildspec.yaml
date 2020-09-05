@@ -11,9 +11,7 @@ phases:
   pre_build:
     commands:
       - echo pre_build phase...
-      - npm i -g @angular/cli
-      - npm install
-      - ng update @angular/cli @angular/core
+      - npm install @angular/cli
       - npm link @angular/cli
   build:
     commands:
