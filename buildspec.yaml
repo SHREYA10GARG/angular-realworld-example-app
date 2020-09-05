@@ -12,7 +12,6 @@ phases:
     commands:
       - echo pre_build phase...
       - npm install -g @angular/cli
-      - ng --version
   build:
     commands:
       - echo Build started on `date`
