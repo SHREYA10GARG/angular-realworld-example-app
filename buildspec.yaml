@@ -3,9 +3,8 @@ version: 0.1
 phases:
   install:
     commands:
-      - sudo apt install python-software-properties
       - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-      - sudo apt install nodejs
+      - apt-get install nodejs
   pre_build:
     commands:
       - echo pre_build phase...
