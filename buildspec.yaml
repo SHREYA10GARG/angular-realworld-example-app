@@ -11,10 +11,6 @@ phases:
   pre_build:
     commands:
       - echo pre_build phase...
-      - npm install --save-dev @angular-devkit/build-angular
-      - npm install
-      - npm audit fix
-      - npm link @angular/cli
       - npm i @angular/compiler-cli
       - npm install
   build:
