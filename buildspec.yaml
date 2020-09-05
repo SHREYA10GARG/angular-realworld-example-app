@@ -13,7 +13,7 @@ phases:
       - echo pre_build phase...
       - npm install --save-dev @angular-devkit/build-angular
       - npm install
-      - ng serve -o
+      - npm audit fix
   build:
     commands:
       - echo Build started on `date`
