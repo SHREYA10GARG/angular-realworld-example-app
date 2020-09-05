@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
       - apt-get install nodejs
   pre_build:
     commands:
