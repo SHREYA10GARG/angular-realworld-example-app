@@ -13,6 +13,7 @@ phases:
       - echo pre_build phase...
       - npm i -g @angular/cli
       - npm install
+      - ng update @angular/cli @angular/core
       - npm link @angular/cli
   build:
     commands:
