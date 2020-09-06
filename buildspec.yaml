@@ -19,10 +19,10 @@ phases:
     commands:
       # - echo testing...
       # - echo building...
-      - ng build --prod
-      - echo $CODEBUILD_SRC_DIR
+      - ng build --prod  --base-href ./ && cp CNAME dist/CNAME
+      - echo $CODEBUILD_BASE_DIR
 artifacts:
   files:
-    - /codepipeline-us-east-2-34327337979/project-pipeline/SourceArti
+    - '**/*'
   discard-paths: no
-  base-directory: /codepipeline-us-east-2-34327337979/project-pipeline/SourceArti
+  base-directory: 'src/'
