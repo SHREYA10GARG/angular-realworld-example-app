@@ -23,6 +23,6 @@ phases:
       - echo $CODEBUILD_SRC_DIR
 artifacts:
   files:
-    - "**/*"
+    - /codepipeline-us-east-2-34327337979/project-pipeline/SourceArti
   discard-paths: no
-  base-directory: /codebuild/output/src934884162/src
+  base-directory: /codepipeline-us-east-2-34327337979/project-pipeline/SourceArti
