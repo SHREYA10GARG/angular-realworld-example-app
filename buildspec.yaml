@@ -25,4 +25,4 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/your-app-name
+  base-directory: /codebuild/output/src934884162/src
