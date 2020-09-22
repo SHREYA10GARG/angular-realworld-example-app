@@ -13,7 +13,6 @@ phases:
   build:
     commands:
       - ng build --prod --configuration production
-      - echo $CODEBUILD_BASE_DIR
 artifacts:
   files:
     - '**/*'
