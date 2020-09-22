@@ -12,7 +12,7 @@ phases:
       - sed 's,https://conduit.productionready.io/api,$URI,g' src/environments/environment.prod.ts
   build:
     commands:
-      - ng build --prod  --base-href ./ && cp CNAME dist/CNAME
+      - ng build --env=prod
       - echo $CODEBUILD_BASE_DIR
 artifacts:
   files:
