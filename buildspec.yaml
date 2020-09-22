@@ -9,6 +9,7 @@ phases:
     commands:
       - npm i -g @angular/cli
       - npm install
+      - sed 's,https://conduit.productionready.io/api,$URI,g' src/environments/environment.prod.ts
   build:
     commands:
       - ng build --prod  --base-href ./ && cp CNAME dist/CNAME
