@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  api_url: 'nodeapp-elb-1696520865.us-east-2.elb.amazonaws.com'
+  api_url: 'https://conduit.productionready.io/api'
 };
