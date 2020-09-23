@@ -11,6 +11,8 @@ phases:
       - npm install
       - sed 's@https://conduit.productionready.io/api@'"$URI"'@' src/environments/environment.ts
       - sed 's@https://conduit.productionready.io/api@'"$URI"'@' src/environments/environment.prod.ts
+      - cat src/environments/environment.ts
+      - cat src/environments/environment.prod.ts
   build:
     commands:
       - ng build --prod --configuration production
